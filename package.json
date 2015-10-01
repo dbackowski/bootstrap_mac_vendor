@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap_mac_vendor",
+  "version": "1.0.0",
+  "description": "jQuery (requires bootstrap) plugin to show vendor of mac address.",
+  "main": "build/bootstrap_mac_vendor.js.min",
+  "scripts": {
+    "update": "node scripts/update_vendor_data.js",
+    "build": "uglifyjs src/bootstrap_mac_vendor.js -c -o build/bootstrap_mac_vendor.js.min",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Baćkowski",
+  "license": "MIT",
+  "devDependencies": {
+    "httpreq": "^0.4.13"
+  }
+}
