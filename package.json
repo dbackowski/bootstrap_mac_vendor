@@ -5,7 +5,7 @@
   "main": "build/bootstrap_mac_vendor.js.min",
   "scripts": {
     "update": "node scripts/update_vendor_data.js",
-    "build": "uglifyjs src/bootstrap_mac_vendor.js -c -o build/bootstrap_mac_vendor.js.min",
+    "build": "uglifyjs build/bootstrap_mac_vendor.js -c -o dist/bootstrap_mac_vendor.js.min",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Damian Baćkowski",

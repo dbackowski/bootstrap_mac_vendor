@@ -31,7 +31,7 @@ httpreq.get('http://standards-oui.ieee.org/oui.txt', function (err, res) {
 
       var result = data.replace(/\{\{organizations\}\}/g, JSON.stringify(organizations, null, '\t')).replace(/\{\{vendors\}\}/g, JSON.stringify(vendors, null, '\t'));
 
-      fs.writeFile(path.join(__dirname, '../src/bootstrap_mac_vendor.js'), result, 'utf8', function (err) {
+      fs.writeFile(path.join(__dirname, '../dist/bootstrap_mac_vendor.js'), result, 'utf8', function (err) {
          if (err) console.log(err);
       });
     });
