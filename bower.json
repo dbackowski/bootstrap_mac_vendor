@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-mac-vendor",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dbackowski/bootstrap_mac_vendor",
+  "description": "jQuery (requires bootstrap) plugin to show vendor of mac address.",
+  "main": "dist/bootstrap_mac_vendor.js.min",
+  "moduleType": [],
+  "keywords": [
+    "bootstrap",
+    "jquery",
+    "mac",
+    "vendor"
+  ],
+  "authors": [
+    "Damian Baćkowski"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
