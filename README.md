@@ -1,4 +1,4 @@
-# bootstrapMacVendor
+# bootstrapMacVendor [![Build Status](https://travis-ci.org/dbackowski/bootstrap_mac_vendor.svg?branch=master)](https://travis-ci.org/dbackowski/bootstrap_mac_vendor)
 
 jQuery (requires bootstrap) plugin to show vendor of mac address.
 
