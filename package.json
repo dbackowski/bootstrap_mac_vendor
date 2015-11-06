@@ -1,6 +1,6 @@
 {
   "name": "bootstrap_mac_vendor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jQuery (requires bootstrap) plugin to show vendor of mac address.",
   "main": "build/bootstrap_mac_vendor.js.min",
   "scripts": {
