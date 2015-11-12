@@ -5,7 +5,7 @@ describe("Testing bootstrapMacVendor", function () {
 
       chai.assert.equal($(".popover").is(":visible"), true);
       chai.assert.equal($("h3.popover-title").html(), '<b>Producent</b>');
-      chai.assert.equal($("div.popover-content").html(), 'Hewlett-Packard Company');
+      chai.assert.equal($("div.popover-content").html(), 'Hewlett Packard');
 
       $('#mac_vendor_found').trigger('mouseout');
       setTimeout(done, 150);
