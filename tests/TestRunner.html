@@ -5,12 +5,12 @@
     <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
     <script src="../node_modules/mocha/mocha.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../dist/bootstrap_mac_vendor.js.min"></script>
   </head>
   <body>
-    <div style="position: absolute !important; top: -9999px !important; left: -9999px !important;">
+    <div <!--style="position: absolute !important; top: -9999px !important; left: -9999px !important;"-->>
       <span class="mac_vendor" id="mac_vendor_found">00:15:60:B1:AB:CB</span>
       <span class="mac_vendor" id="mac_vendor_not_found">FA:FA:FA:00:00:00</span>
     </div>
@@ -20,12 +20,11 @@
       mocha.reporter('html');
       var expect = chai.expect;
 
-      $('.mac_vendor').bootstrapMacVendor();
+      $( document ).ready(function() {
+        $('.mac_vendor').bootstrapMacVendor();
+        mocha.run();
+      });
     </script>
     <script src="./spec.js"></script>
-    <script>
-      if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
-      else { mocha.run(); }
-    </script>
   </body>
 </html>
