@@ -1,11 +1,11 @@
 {
   "name": "bootstrap_mac_vendor",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "jQuery (requires bootstrap) plugin to show vendor of mac address.",
   "main": "build/bootstrap_mac_vendor.js.min",
   "scripts": {
     "update": "node scripts/update_vendor_data.js",
-    "build": "uglifyjs build/bootstrap_mac_vendor.js -c -o dist/bootstrap_mac_vendor.js.min",
+    "build": "node_modules/uglify-js/bin/uglifyjs build/bootstrap_mac_vendor.js -c -o dist/bootstrap_mac_vendor.js.min",
     "test": "mocha-phantomjs ./tests/TestRunner.html"
   },
   "repository": {
@@ -16,11 +16,11 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.0",
     "chai": "^3.3.0",
     "httpreq": "^0.4.16",
+    "jquery": "^3.1.0",
     "mocha": "^3.0.2",
     "mocha-phantomjs": "^4.0.2",
-    "uglifyjs": "^2.4.10"
+    "uglify-js": "^3.1.1"
   }
 }
