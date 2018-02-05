@@ -1,10 +1,10 @@
 language: node_js
 
 node_js:
-  - "0.12"
+  - "6"
 
 before_script:
-  npm install -g mocha-phantomjs
+  yarn global add mocha-phantomjs
 
 script:
-  npm test
+  yarn test
